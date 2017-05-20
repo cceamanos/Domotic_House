@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+	
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/tvstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toggleButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="@string/estado_gas"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1d2088"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/toggleButton1"
+        android:layout_alignRight="@+id/toggleButton1"
+        android:gravity="center"
+        android:src="@drawable/bombilla" />
+    
+    <Button
+        android:id="@+id/buttonPrograma"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/toggleButton1"
+        android:layout_alignRight="@id/toggleButton1"
+        android:layout_alignTop="@+id/tvstate"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/reloj"
+        android:text="@string/programado" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/toggleButton1"
+        android:layout_alignRight="@id/toggleButton1"
+        android:layout_below="@+id/buttonPrograma"
+        android:text="@string/precioluz" />
+    
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/toggleButton1"
+        android:layout_alignRight="@id/toggleButton1"
+        android:layout_below="@+id/Button01"
+        android:text="@string/precioluzmanyana" />
+
+    <ImageView
+        android:id="@+id/reloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonPrograma"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/Button01"
+        android:src="@drawable/programar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/Button01"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/Button01"
+        android:layout_toRightOf="@+id/Button01"
+        android:src="@drawable/otroenchufado" />
+
+</RelativeLayout>

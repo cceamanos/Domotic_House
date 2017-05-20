@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAC1E2"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+ 
+    <!--  Pagina de configuracion con cuatro botones -->
+    <!--  Boton para configurar los usuarios -->
+
+    <Button
+        android:id="@+id/btnConfUsers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="@string/confusers" />
+ 
+    <!--  Boton para configurar habitaciones -->
+
+    <Button
+        android:id="@+id/btnConfHabitacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="@string/confhab" />
+ 
+    <!--  Boton para configurar los sensores -->
+
+    <Button
+        android:id="@+id/btnConfSensor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="@string/confsensor" />
+    
+    <!--  Boton para configurar los Dispositivos -->
+
+    <Button
+        android:id="@+id/btnConfDispositivo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="@string/confdisp" />
+    
+</LinearLayout>
+

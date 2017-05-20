@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" 
+  android:background="#AAC1E2">
+     
+  <TextView
+    android:id="@+id/temp_sala"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:textColor="@color/opaque_red"
+    android:text="Large Text"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+ <TextView
+     android:id="@+id/hum_sala"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentRight="true"
+     android:text="Large Text"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:textColor="@color/green" />
+    
+</RelativeLayout>

@@ -1,0 +1,233 @@
+﻿<resources>
+    <string-array name="DireccionesServidor">
+       <item>http://SERVER/login/acces.php</item>           <!-- 0 -->
+       <item>http://SERVER/create_user.php</item>           <!-- 1 -->
+       <item>http://SERVER/add_evento.php</item>            <!-- 2 -->
+       <item>http://SERVER/mostar.php</item>                <!-- 3 -->
+       <item>http://SERVER/boltio/getinfo.php</item>              <!-- 4 -->
+       <item>http://SERVER/habitaciones.php</item>    		 <!-- 5 -->
+       <item>http://SERVER/get_dispositivos.php</item>  	 <!-- 6 -->
+       <item>http://SERVER/get_temperatura.php</item>       <!-- 7 -->
+       <item>http://SERVER/get_hist_temphum.php</item>      <!-- 8 -->
+       <item>http://SERVER/llaves/mostar.php</item>         <!-- 9 -->
+       <item>http://SERVER/llaves/updateGas0.php</item>     <!-- 10 -->
+       <item>http://SERVER/llaves/updateGas1.php</item>     <!-- 11 -->
+       <item>http://SERVER/llaves/most_agua.php</item>      <!-- 12 -->
+       <item>http://SERVER/llaves/updateAgua0.php</item>    <!-- 13 -->
+       <item>http://SERVER/llaves/updateAgua1.php</item>    <!-- 14 -->
+       <item>http://SERVER/llaves/most_disp.php</item>      <!-- 15 -->
+       <item>http://SERVER/llaves/updateDisp0.php</item>    <!-- 16 -->
+       <item>http://SERVER/llaves/updateDisp1.php</item>    <!-- 17 -->
+       <item>http://SERVER/get_temp_deseada.php</item>      <!-- 18 -->
+       <item>http://SERVER/get_automatismo.php</item>       <!-- 19 -->
+       <item>http://SERVER/llaves/updateCale0.php</item>    <!-- 20 -->
+       <item>http://SERVER/llaves/updateAutCal0.php</item>  <!-- 21 -->
+       <item>http://SERVER/llaves/updateAutCal1.php</item>  <!-- 22 -->
+       <item>http://SERVER/add_evento_cale.php</item>       <!-- 23 -->
+       <item>http://SERVER/llaves/updateRiego0.php</item>   <!-- 24 -->
+       <item>http://SERVER/llaves/updateRiego1.php</item>   <!-- 25 -->
+       <item>http://SERVER/llaves/updateAutRie0.php</item>  <!-- 26 -->
+       <item>http://SERVER/llaves/updateAutRie1.php</item>  <!-- 27 -->
+       <item>http://SERVER/llaves/updateAutMensRie0.php</item>  <!-- 28 -->
+       <item>http://SERVER/llaves/updateAutMensRie1.php</item>  <!-- 29 -->
+       <item>http://SERVER/llaves/updateAlarma0.php</item>  <!-- 30 -->
+       <item>http://SERVER/llaves/updateAlarma1.php</item>  <!-- 31 -->
+       <item>http://SERVER/get_persianas.php</item>  	 	 <!-- 32 -->
+       <item>http://SERVER/llaves/update_persianas.php</item>  <!-- 33 -->
+       <item>http://SERVER/llaves/updateDisp.php</item>   <!-- 34 -->
+       <item>http://SERVER/estado_disp.php</item>   <!-- 35 -->
+       <item>http://SERVER/llaves/estadoRiego.php</item>   <!-- 36 -->
+       <item>http://SERVER/add_evento_pers.php</item>      <!-- 37 -->
+       <item>http://SERVER/create_hab.php</item>           <!-- 38 -->
+       <item>http://SERVER/create_disp.php</item>           <!-- 39 -->
+       <item>http://SERVER/create_sensor.php</item>           <!-- 40 -->
+       <item>http://SERVER/get_user.php</item>             <!-- 41 -->
+       <item>http://SERVER/update_user.php</item>           <!-- 42 -->
+       <item>http://SERVER/get_tipuser.php</item>           <!-- 43 -->
+       <item>http://SERVER/get_habitacion.php</item>             <!-- 44 -->
+       <item>http://SERVER/update_habitacion.php</item>           <!-- 45 -->
+       <item>http://SERVER/delete_habitacion.php</item>           <!-- 46 -->
+       <item>http://SERVER/get_alldispositivos.php</item>         <!-- 47 -->
+       <item>http://SERVER/update_dispositivo.php</item>           <!-- 48 -->
+       <item>http://SERVER/delete_dispositivo.php</item>           <!-- 49 -->
+       <item>http://SERVER/update_sensor.php</item>           <!-- 50 -->
+       <item>http://SERVER/delete_sensor.php</item>           <!-- 51 -->
+       <item>http://SERVER/llaves/updateAutPers0.php</item>  <!-- 52 -->
+       <item>http://SERVER/llaves/updateAutPers1.php</item>  <!-- 53 -->
+  	</string-array>
+	<string-array name="TextosCompletos">
+	   <item>Permite abrir o cerrar la llave general del Gas de la casa. Permite igualmente programar el encendido y apagado de la válvula."</item>
+	   <item>Permite apagar o encender manualmente el dispositivo. También programar el encendido o apagado del dispositivo. Proporciona el precio de la luz del día."</item>
+	   <item>Permite abrir o cerrar la llave general del Agua de la casa. Permite igualmente programar el encendido y apagado de la válvula."</item>
+	   <item>Permite encender o apagar el sistema de riego. Permite igualmente programar el encendido y apagado del mismo y solicitar aviso en caso de que llueva."</item>
+	   <item>Permite encender o apagar el sistema de alarma. Permite igualmente programar el encendido y apagado del mismo."</item>
+	</string-array>
+	<string-array name="codigo">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+    </string-array>
+    <string-array name="sensores">
+        <item>Temperatura</item>
+        <item>Humedad</item>
+        <item>Gas</item>
+        <item>Luminosidad</item>
+        <item>Inundación</item>
+        <item>Movimiento(PIR)</item>
+        <item>Lluvia</item>
+        <item>Fuego</item>
+        <item>Sonido</item>
+        <item>Ultrasonido</item>
+    </string-array>
+    <string-array name="dispositivo">
+        <item>Valvula de gas</item>
+        <item>Valvula de agua</item>
+        <item>Valvula de riego</item>
+        <item>Luz</item>
+        <item>Persiana</item>
+        <item>Calefaccion</item>
+        <item>Lavadora</item>
+        <item>Lavavajillas</item>
+        <item>CalientaAgua</item>
+        <item>Cafetera</item>
+        <item>Microondas</item>
+        <item>Otro conectado</item>
+        <item>Ventilador</item>
+        <item>Equipo musica</item>  
+    </string-array>
+    <string-array name="onoff">
+        <item> 0</item>
+        <item> 1</item>
+    </string-array>
+    <string name="app_name">DomoticHouse</string>
+
+    <string name="introducedatos">Dispositivos</string>
+
+    <string name="titulo_aplicacion">Casa Domótica</string>
+
+    <string name="version">Versión 1.0</string>
+
+    <string name="temperaturas">Temperatura</string>
+
+    <string name="persianas">Persianas</string>
+
+    <string name="riego">Riego           </string>
+
+    <string name="agua">Agua </string>
+
+    <string name="gas">Gas</string>
+
+    <string name="calef">Calefacción</string>
+
+    <string name="alarm">Alarma</string>
+
+    <string name="conf">Config.</string>
+
+    <string name="settings">Conf y data</string>
+
+    <string name="salon">Temperatura salón</string>
+
+    <string name="login">Login</string>
+
+    <string name="password">Password</string>
+
+    <string name="usuario">Usuario</string>
+
+    <string name="logo">Logo</string>
+
+    <string name="login1">Login</string>
+
+    <string name="confusers">Configura Usuarios</string>
+
+    <string name="confhab">Configura Habitacion</string>
+
+    <string name="confsensor">Configura Sensor</string>
+
+    <string name="confdisp">Configura Dispositivo</string>
+
+    <string name="newuser">Añadir Usuario</string>
+
+    <string name="moduser">Modifica Usuario</string>
+
+    <string name="deluser">Borrar Usuario</string>
+
+    <string name="nom_user">Nombre de Usuario</string>
+
+    <string name="nom_user_defecto">Nombre del usuario</string>
+
+    <string name="modify_user">Modificar o Borrar Usuario</string>
+
+    <string name="log_user">Login de Usuario</string>
+
+    <string name="pass_user">Password de usuario</string>
+
+    <string name="create_user">Crear nuevo usuario</string>
+
+    <string name="add_user">Añadir Usuario</string>
+
+    <string name="estado_gas">Estado de llave paso GAS</string>
+
+    <string name="programado">Programar</string>
+
+    <string name="desc_prog">Descripción del programa</string>
+
+    <string name="fecha_prog">Fecha del programa</string>
+
+    <string name="hora_prog">Hora del programa</string>
+
+    <string name="on">On</string>
+
+    <string name="off">Off</string>
+
+    <string name="aceptar">Aceptar</string>
+
+    <string name="cambiar">Cambiar</string>
+    <string name="precioluz">Coste luz hoy</string>
+    <string name="precioluzmanyana">Coste luz mañana</string>
+    <string name="menu_settings">Settings</string>
+    <string name="cd">Content Description</string>
+    <string name="horawatiobarato">Hora watio más barato</string>
+    <string name="ultimashoras">Últimas 5 horas</string>
+    <string name="icon">Icon</string>
+    <string name="icon1">icon</string>
+    <string name="temperatura">La temperatura en</string>
+    <string name="humedad">La humedad ambiente en</string>
+    <string name="estado_agua">Estado de llave paso AGUA</string>
+    <string name="tempactual">Temperatura actual</string>
+    <string name="tempdeseada">Temperatura deseada</string>
+    <string name="sistema">Variables del sistema</string>
+    <string name="automatico">Automático</string>
+    <string name="manual">Manual</string>
+    <string name="encendido">Sistema</string>
+    <string name="histeresis">Histéresis</string>
+    <string name="auto">Auto</string>
+     <string name="actualiza">Actualizar</string>
+     <string name="estadoRiego">Estado del sistema de Riego</string>
+     <string name="avis_llueve">Avisar</string>
+     <string name="apaga_llueve">Apagar</string>
+     <string name="llueve">Si llueve</string>
+     <string name="estadoAlarma">Estado del sistema de Alarma</string>
+     <string name="estadoPersiana">Estado de persiana de </string>
+     <string name="cambiaPersiana">Mover persiana </string>
+     <string name="apert_pers">Apertura de la persiana</string>
+     <string name="codigohabitacion">Código de habitación</string>
+     <string name="nombrehabitacion">Nombre de habitación</string>
+     <string name="descripcionhab">Descripción de habitación</string>
+     <string name="codzigbee">Código Zigbee</string>
+     <string name="createhabitacion">Añadir nueva habitación</string>
+     <string name="cod_dispositivo">Código dispositivo</string>
+     <string name="desc_dispositivo">Descripción de dispositivo</string>
+     <string name="tipodispositivo">Tipo de dispositivo</string>
+     <string name="estadoinicial">Estado Inicial</string>
+     <string name="createdispositivo">Añadir nuevo dispositivo</string>
+     <string name="codigosensor">Código del Sensor</string>
+     <string name="descripsensor">Descripción del sensor</string>
+     <string name="tiposensor">Tipo de sensor</string>
+     <string name="modificausuario">Modificar usuario</string>
+     <string name="modifyhabitacion">Modificar datos habitación</string>
+
+</resources>

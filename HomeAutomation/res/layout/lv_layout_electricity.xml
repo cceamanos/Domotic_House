@@ -1,0 +1,44 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:cacheColorHint="#00000000"
+    style="@style/listViewItem"
+    >
+
+    <View
+        android:id="@+id/item_separator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lvDividerHeight"
+        android:background="@color/lvDividerColor"
+        android:cacheColorHint="#00000000"/>
+
+    <TextView
+        android:textIsSelectable="false"
+        android:id="@+id/lv_item_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        style="@style/listViewPrimaryDetail"
+        android:layout_toLeftOf="@id/vertical_divider"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:id="@+id/lv_item_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_item_header"
+        style="@style/listViewSecondaryDetail"
+        android:layout_above="@id/item_separator"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/vertical_divider"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        />
+</RelativeLayout>

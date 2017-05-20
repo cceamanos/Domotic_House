@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+    
+    <SeekBar
+        android:id="@+id/seekBarPersianas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:textOff=""
+        android:textOn="" />
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/seekBarPersianas"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="12" >
+ 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+ 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="20"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+ 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="40"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+ 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="60"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+ 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="80"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+ 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="100"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/tvstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarPersianas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarPersianas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+        android:text="@string/estadoPersiana"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1d2088"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonPrograma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/tvstate"
+        android:layout_marginTop="10dp"
+        android:text="@string/programado" />
+    
+    <Button
+        android:id="@+id/buttonActualiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/buttonPrograma"
+        android:layout_marginTop="10dp"
+        android:text="@string/cambiaPersiana" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:src="@drawable/persiana" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toggleButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonActualiza"
+        android:text="Automatica con sensor luz"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lvHeaderTextColor" />
+    <ToggleButton
+        android:id="@+id/tgl_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:clickable="true" />
+
+    
+
+</RelativeLayout>
+

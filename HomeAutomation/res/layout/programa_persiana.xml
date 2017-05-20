@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textDescProg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/desc_prog"
+        android:textColor="@color/darkblue"
+        android:textSize="17sp" />
+
+    <!-- Entrada de la descripción del programa -->
+
+    <EditText
+        android:id="@+id/inputDescProg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDescProg"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputDescProg"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/fecha_prog"
+        android:textColor="@color/darkblue"
+        android:textSize="17sp" />
+
+    <!-- Entrada de la fecha del programa -->
+
+    <EditText
+        android:id="@+id/inputFechProg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFecha"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/buttonFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFecha"
+        android:layout_margin="5dip"
+        android:layout_toRightOf="@+id/inputFechProg"
+        android:text="@string/cambiar" />
+
+    <TextView
+        android:id="@+id/textHoraProg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputFechProg"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/hora_prog"
+        android:textColor="@color/darkblue"
+        android:textSize="17sp" />
+
+    <!-- Entrada de la hora del programa -->
+
+    <EditText
+        android:id="@+id/inputHoraProg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHoraProg"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:inputType="none"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/buttonHora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHoraProg"
+        android:layout_margin="5dip"
+        android:layout_toRightOf="@+id/inputHoraProg"
+        android:text="@string/cambiar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBarPersianas"
+        android:layout_alignRight="@+id/inputHoraProg"
+        android:layout_below="@+id/seekBarPersianas"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="12" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="20"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="40"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="60"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="80"
+            android:textColor="@android:color/white"
+             />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="100"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreateEvento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/aceptar" />
+
+    <SeekBar
+        android:id="@+id/seekBarPersianas"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/inputHoraProg"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:button="@null" />
+    
+    <TextView
+        android:id="@+id/textSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputHoraProg"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/seekBarPersianas"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/apert_pers"
+        android:textColor="@color/darkblue"
+        android:textSize="17sp" />
+
+</RelativeLayout>

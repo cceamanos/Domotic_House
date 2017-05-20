@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+    
+    <ToggleButton
+        android:id="@+id/toggleButtonAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/tvstateAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButtonAlarm"
+        android:layout_centerHorizontal="true" android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toggleButtonAlarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="@string/estadoAlarma"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1d2088"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonProgramaAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButtonAlarm"
+        android:layout_alignRight="@+id/toggleButtonAlarm"
+        android:layout_below="@+id/tvstateAlarma"
+        android:layout_marginTop="24dp"
+        android:text="@string/programado" />
+
+    <ImageView
+        android:id="@+id/imageViewCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:src="@drawable/green_home" />
+
+</RelativeLayout>

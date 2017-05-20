@@ -1,0 +1,63 @@
+<LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:padding="10dip"
+          android:id="@+id/layout1" 
+          android:background="#AAC1E2"
+                
+          >
+          
+            <ImageView android:layout_height="wrap_content" 
+   		   	  android:src="@drawable/home"
+		      android:id="@+id/img" 
+		      android:layout_width="fill_parent"
+		      android:layout_marginTop="15dip">
+		      android:gravity="center"		      
+           </ImageView>
+          
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Usuario"
+                android:layout_marginTop="25dip"
+           />
+                
+          <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:id="@+id/edusuario"
+                android:background="@drawable/edittext_rounded_corners"                
+           />
+          
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Password"/>
+                
+          <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:id="@+id/edpassword"
+                android:background="@drawable/edittext_rounded_corners"
+                
+                />
+                
+          <Button 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:text="Login"
+                android:id="@+id/Blogin"
+                />
+ 
+</LinearLayout>
+
+
+
+

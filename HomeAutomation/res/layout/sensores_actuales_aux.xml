@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:cacheColorHint="#00000000"
+    style="@style/listViewItem"
+    >
+
+    <View
+        android:id="@+id/disp_separator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lvDividerHeight"
+        android:background="@color/lvDividerColor"
+        android:cacheColorHint="#00000000"/>
+
+    <View
+        android:id="@+id/vertical_divider"
+        android:layout_marginLeft="220dp"
+        style="@style/listViewVerticalDivider"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/button_disp"
+        />
+
+    <TextView
+        android:id="@+id/sens_item_header"
+        style="@style/listViewPrimaryDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/vertical_divider"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="22.5ºC"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/val_sen"
+        style="@style/listViewPrimaryDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/vertical_divider"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/vertical_divider"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="22.5ºC"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/horaDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="TextView" />
+
+</RelativeLayout>
+

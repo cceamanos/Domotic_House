@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAC1E2"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp">
+ 
+    <View
+        android:id="@+id/item_separator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lvDividerHeight"
+        android:background="@color/lvDividerColor"
+        android:cacheColorHint="#00000000"/>
+     
+    <TextView
+        android:id="@+id/habitacionId"
+        android:textIsSelectable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/listViewPrimaryDetail"
+        android:layout_marginLeft="80dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"/>
+ 
+        <ToggleButton
+            android:id="@+id/estado_disp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dip"
+            android:focusable="false"
+            android:clickable="false" />
+
+       <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/habitacionId"
+            android:layout_alignTop="@+id/habitacionId"
+            android:layout_toRightOf="@+id/habitacionId"
+             />
+
+</RelativeLayout>

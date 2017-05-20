@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textDescProg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/desc_prog"
+        android:textColor="@color/darkblue"
+        android:textSize="17sp" />
+
+    <!-- Entrada de la descripción del programa -->
+
+    <EditText
+        android:id="@+id/inputDescProg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:inputType="text"
+        android:singleLine="true" 
+        android:layout_below="@+id/textDescProg"/>
+        
+
+    
+    	<TextView
+    	    android:id="@+id/textFecha"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip"
+	        android:paddingTop="10dip"
+	        android:text="@string/fecha_prog"
+	        android:textColor="@color/darkblue"
+	        android:textSize="17sp"
+	        android:layout_below="@+id/inputDescProg" />
+
+    		<!-- Entrada de la fecha del programa -->
+
+    <EditText
+        android:id="@+id/inputFechProg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFecha"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:inputType="text"
+        android:singleLine="true" />
+    
+    <Button
+        android:id="@+id/buttonFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFecha"
+        android:layout_margin="5dip"
+        android:layout_toRightOf="@+id/inputFechProg"
+        android:text="@string/cambiar" />
+
+    <TextView
+        android:id="@+id/textHoraProg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/hora_prog"
+        android:textColor="@color/darkblue"
+        android:textSize="17sp"
+        android:layout_below="@+id/inputFechProg" />
+
+    <!-- Entrada de la hora del programa -->
+
+    <EditText
+        android:id="@+id/inputHoraProg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:inputType="none"
+        android:singleLine="true" 
+        android:layout_below="@+id/textHoraProg"/>
+    
+    <Button
+        android:id="@+id/buttonHora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_toRightOf="@+id/inputHoraProg"
+        android:text="@string/cambiar"
+        android:layout_below="@+id/textHoraProg" />
+    
+		<RadioGroup
+	        android:id="@+id/rdgGrupo"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="200dp"
+		    android:layout_marginTop="30dp"
+	        android:layout_below="@+id/inputHoraProg"
+	        android:checkedButton="@+id/radioButtonOn">
+		    <RadioButton
+		        android:id="@+id/radioButtonOn"
+		        android:checked="true"
+		        android:text="@string/on" />
+		
+		    <RadioButton
+		        android:id="@+id/radioButtonOff"
+		        android:checked="false"
+		        android:text="@string/off" />
+		</RadioGroup>
+    <Button
+        android:id="@+id/btnCreateEvento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/aceptar" />
+    
+    <TextView
+        android:id="@+id/histeresis"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/inputHoraProg"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Histeresis/Temperatura"
+        android:textColor="@color/lvHeaderTextColor"
+        android:textSize="15sp" />
+    <TextView
+         android:id="@+id/valortemp"
+         android:layout_width="wrap_content"
+         android:layout_height="35dp"
+         android:layout_marginTop="5dp"
+         android:layout_alignWithParentIfMissing="false"
+         android:layout_toRightOf="@+id/buttonmastemp"
+         android:layout_below="@+id/histeresis"
+         android:text="22ºC"
+         android:textColor="@color/darkpurple"
+         android:textSize="25sp" />
+    
+     <ImageView
+         android:id="@+id/buttonmenostemp"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_marginTop="12dp"
+         android:layout_below="@+id/histeresis"
+         android:layout_alignRight="@+id/inputHoraProg" 
+         android:layout_toRightOf="@+id/valortemp"       
+         android:clickable="true"  
+ 		 android:onClick="imageClickMenosDes"
+         android:src="@drawable/menos"/>
+     
+     <ImageView
+         android:id="@+id/buttonmastemp"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_marginTop="12dp"
+         android:layout_below="@+id/histeresis"
+         android:layout_alignLeft="@+id/inputHoraProg"
+         android:clickable="true"  
+ 		 android:onClick="imageClickMasDes"
+         android:src="@drawable/mas"/>
+     <TextView
+         android:id="@+id/valorhist"
+         android:layout_width="wrap_content"
+         android:layout_height="35dp"
+         android:layout_marginTop="10dp"
+         android:layout_alignWithParentIfMissing="false"
+         android:layout_toRightOf="@+id/buttonmashist"
+         android:layout_below="@+id/valortemp"
+         android:text="22ºC"
+         android:textColor="@color/darkpurple"
+         android:textSize="25sp" />
+    
+     <ImageView
+         android:id="@+id/buttonmenoshist"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_toRightOf="@+id/valorhist"
+         android:layout_marginTop="18dp"
+         android:layout_alignRight="@+id/buttonmenostemp"
+         android:layout_alignLeft="@+id/buttonmenostemp"
+         android:layout_below="@+id/valortemp"
+         android:clickable="true"  
+ 		 android:onClick="imageClickMenosHis"
+         android:src="@drawable/menos"/>
+     
+     <ImageView
+         android:id="@+id/buttonmashist"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_marginTop="18dp"
+         android:layout_alignLeft="@+id/inputHoraProg"
+         android:layout_below="@+id/valortemp"
+         android:clickable="true"  
+ 		 android:onClick="imageClickMasHis"
+         android:src="@drawable/mas"/>
+
+</RelativeLayout>

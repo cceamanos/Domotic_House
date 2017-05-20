@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+    
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/tvstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_centerHorizontal="true" android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toggleButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="@string/estadoRiego"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1d2088"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonProgramaAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButton1"
+        android:layout_alignRight="@+id/toggleButton1"
+        android:layout_below="@+id/tvstate"
+        android:layout_marginTop="24dp"
+        android:text="@string/programado" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:src="@drawable/riego" />
+    
+    <TextView
+        android:id="@+id/llueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonProgramaAgua"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/llueve"
+        android:textColor="@color/lvHeaderTextColor" />
+    
+    <TextView
+        android:id="@+id/mensajeLlueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llueve"
+        android:layout_marginTop="10dp"
+		android:layout_alignLeft="@+id/buttonProgramaAgua"
+        android:text="@string/avis_llueve"
+        android:textColor="@color/lvHeaderTextColor" />
+      
+      <ToggleButton
+            android:id="@+id/mens_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mensajeLlueve"
+            android:layout_alignLeft="@+id/buttonProgramaAgua"
+            android:focusable="true"
+            android:clickable="true" />
+
+<TextView
+    android:id="@+id/apagadoAut"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/llueve"
+    android:layout_marginTop="10dp"
+    android:layout_alignRight="@+id/buttonProgramaAgua"
+    android:text="@string/apaga_llueve"
+    android:textColor="@color/lvHeaderTextColor" />
+      
+      <ToggleButton
+            android:id="@+id/apag_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apagadoAut"
+            android:layout_alignRight="@+id/buttonProgramaAgua"
+            android:focusable="true"
+            android:clickable="true" />
+      
+      
+</RelativeLayout>
+
+

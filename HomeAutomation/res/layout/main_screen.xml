@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAC1E2" >
+    
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="79dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/titulo_aplicacion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        
+		<ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+		
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+           	android:layout_width="match_parent"
+           >
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="33"
+			    android:gravity="center"
+			    android:orientation="vertical" >
+                
+                <Button
+                    android:id="@+id/btnViewTemperatura"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_temperatura"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="@string/temperaturas"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+			</LinearLayout>
+			
+            <LinearLayout
+                android:layout_height="wrap_content"
+           		android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+             >
+
+                <Button
+                    android:id="@+id/btnViewLuces"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_luces"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/introducedatos"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnViewPersianas"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_persianas"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/persianas"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+		<TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            >
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:gravity="center"
+			    android:orientation="vertical" >
+                
+                <Button
+                    android:id="@+id/btnViewRiego"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_riego"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="@string/riego"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+			</LinearLayout>
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+             >
+
+                <Button
+                    android:id="@+id/btnViewAgua"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_agua"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/agua"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"        
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnViewGas"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_gas"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/gas"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            >
+
+			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                 >
+                
+                <Button
+                    android:id="@+id/btnViewCalefac"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_calefaccion"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/calef"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+			</LinearLayout>
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+             >
+
+                <Button
+                    android:id="@+id/btnViewAlarma"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_alarma"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/alarm"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnViewSettings"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_settings"
+                    android:gravity="center"
+                    android:padding="40dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@color/goblinGreen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+	</TableLayout>
+   </LinearLayout>
+</ScrollView>

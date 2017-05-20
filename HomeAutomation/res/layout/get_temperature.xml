@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAC1E2"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/temperatura"
+        android:textColor="@color/goblinGreen"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/disp_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lvDividerColor"
+        android:layout_below="@+id/cabecera"
+        android:cacheColorHint="#00000000"/>
+    
+    
+    
+    <TextView
+        android:id="@+id/valortemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/disp_separator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkred"
+        android:text="28 ºC"
+        android:textSize="50sp" />
+    
+    <View
+        android:id="@+id/disp_separator2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lvDividerColor"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/valortemperatura"
+        android:cacheColorHint="#00000000"/>
+    
+    <TextView
+        android:id="@+id/cabecerahumedad"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/disp_separator2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/humedad"
+        android:textColor="@color/lvHeaderTextColor"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/disp_separator3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lvDividerColor"
+        android:layout_below="@+id/cabecerahumedad"
+        android:cacheColorHint="#00000000"/>
+    
+    <TextView
+        android:id="@+id/valorhumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/disp_separator3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkpurple"
+        android:text="44 %"
+        android:textSize="50sp" />
+    
+    <View
+        android:id="@+id/disp_separator4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lvDividerColor"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/valorhumedad"
+        android:cacheColorHint="#00000000"/>
+    
+    <TextView
+        android:id="@+id/cabecerahist"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/disp_separator4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ultimashoras"
+        android:textColor="@color/goblinGreen"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/disp_separator5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lvDividerColor"
+        android:layout_below="@+id/cabecerahist"
+        android:cacheColorHint="#00000000"/>
+    
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/disp_separator5"
+        android:layout_marginTop="10dp" >
+
+        <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+	        <TextView  android:padding="8dp" android:id="@+id/tabletextView1" android:textColor="@color/lvHeaderTextColor" android:layout_width="10dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="02 h"></TextView>
+	        <TextView  android:padding="8dp" android:id="@+id/tabletextView2" android:textColor="@color/lvHeaderTextColor" android:layout_width="10dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="03 h"></TextView>
+	        <TextView  android:padding="8dp" android:id="@+id/tabletextView3" android:textColor="@color/lvHeaderTextColor" android:layout_width="10dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="04 h"></TextView>
+	        <TextView  android:padding="8dp" android:id="@+id/tabletextView4" android:textColor="@color/lvHeaderTextColor" android:layout_width="10dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="05 h"></TextView>
+	        <TextView  android:padding="8dp" android:id="@+id/tabletextView5" android:textColor="@color/lvHeaderTextColor" android:layout_width="10dp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="06 h"></TextView>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" android:layout_height="wrap_content">                    
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="20ºC" android:textColor="@color/darkred"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="22ºC" android:textColor="@color/darkred"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="23ºC" android:textColor="@color/darkred"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="24ºC" android:textColor="@color/darkred"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="25ºC" android:textColor="@color/darkred"></TextView>
+      	</TableRow>
+		<TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">                    
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="44%" android:textColor="@color/darkpurple"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="43%" android:textColor="@color/darkpurple"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="36%" android:textColor="@color/darkpurple"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="35%" android:textColor="@color/darkpurple"></TextView>
+            <TextView  android:padding="8dp" android:id="@+id/tabletextView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="32%" android:textColor="@color/darkpurple"></TextView>
+		</TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/iconohum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/disp_separator4"
+        android:layout_below="@+id/disp_separator3"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/valorhumedad"
+        android:contentDescription="@string/icon1"
+        android:src="@drawable/humedad" />
+    
+    <ImageView
+        android:id="@+id/iconotemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/disp_separator2"
+        android:layout_below="@+id/disp_separator"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/valortemperatura"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/temperatura" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:cacheColorHint="#00000000"
+    style="@style/listViewItem"
+    >
+
+    <View
+        android:id="@+id/disp_separator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lvDividerHeight"
+        android:background="@color/lvDividerColor"
+        android:cacheColorHint="#00000000"/>
+
+    <ImageButton
+        style="@style/listViewItemButtonStyle"
+        android:background="@android:drawable/list_selector_background"
+        android:src="@drawable/ic_details"
+        android:id="@+id/button_disp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:onClick="goToLights"
+        android:contentDescription="@string/cd"
+        />
+
+    <View
+        android:id="@+id/vertical_divider"
+        style="@style/listViewVerticalDivider"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/button_disp"
+        />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:id="@+id/disp_item_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        style="@style/listViewPrimaryDetail"
+        android:layout_toLeftOf="@id/vertical_divider"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        />
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignRight="@+id/vertical_divider"
+	    android:layout_marginLeft="160dp"
+	    android:layout_alignTop="@+id/vertical_divider"
+	    android:gravity="right"
+	    android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

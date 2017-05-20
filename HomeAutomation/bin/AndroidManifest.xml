@@ -1,0 +1,215 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.house.houseautomation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <application
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity android:name=".Login"
+            	  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PaginaPrincipal"
+            android:screenOrientation="portrait"
+            android:label="DomoticHouse" >
+        </activity>
+        <!-- Get Temperature Activity -->
+        <activity
+            android:name=".GetData"
+            android:screenOrientation="portrait"
+            android:label="Temperaturas actuales">
+        </activity>
+        <!-- Get Cost Electricity -->
+        <activity
+            android:name=".GetElectricityData"
+            android:screenOrientation="portrait"
+            android:label="Datos actuales de la luz">
+        </activity>
+        <activity
+            android:name=".OpenCloseGas"
+            android:screenOrientation="portrait"
+            android:label="Apertura y cierre válvula  de gas">
+        </activity>
+        <activity
+            android:name=".ConfSistema"
+            android:screenOrientation="portrait"
+            android:label="Configuracion del sistema">
+        </activity>
+        <activity
+            android:name=".ConfUsers"
+            android:screenOrientation="portrait"
+            android:label="Configuracion de usuarios">
+        </activity>
+        <activity
+            android:name=".ConfHabitacion"
+            android:screenOrientation="portrait"
+            android:label="Configuracion de espacios domotizados">
+        </activity>
+        <activity
+            android:name=".ConfDispositivo"
+            android:screenOrientation="portrait"
+            android:label="Configuracion dispositivos en habitación">
+        </activity>
+        <activity
+            android:name=".ConfSensor"
+            android:screenOrientation="portrait"
+            android:label="Configuracion sensores en habitación">
+        </activity>
+        <activity
+            android:name=".AddUser"
+            android:screenOrientation="portrait"
+            android:label="Añadir un usuario">
+        </activity>
+        <activity
+            android:name=".AddHabitacion"
+            android:screenOrientation="portrait"
+            android:label="Añadir habitaciones">
+        </activity>
+        <activity
+            android:name=".AddDispositivo"
+            android:screenOrientation="portrait"
+            android:label="Añadir dispositivos en habitación">
+        </activity>
+        <activity
+            android:name=".AddSensor"
+            android:screenOrientation="portrait"
+            android:label="Añadir sensores en habitación">
+        </activity>
+        <activity
+            android:name=".ModifyUser"
+            android:screenOrientation="portrait"
+            android:label="Modificar usuario actual">
+        </activity>
+        <activity
+            android:name=".ProgramaGas"
+            android:screenOrientation="portrait"
+            android:label="Programar dispositivo">
+        </activity>
+        <activity
+            android:name=".HabLuz"
+            android:screenOrientation="portrait"
+            android:label="Listado habitaciones casa">
+        </activity>
+        <activity
+            android:name=".HabitacionLuces"
+            android:screenOrientation="portrait"
+            android:label="Dispositivos domotizados de la habitación">
+        </activity>
+        <activity
+            android:name=".Dispositivo"
+            android:screenOrientation="portrait"
+            android:label="Estado del dispositivo y programación">
+        </activity>
+        <activity
+            android:name=".GetTemperatura"
+            android:screenOrientation="portrait"
+            android:label="Temperatura y humedad de la habitación">
+        </activity>
+        <activity
+            android:name=".OpenCloseAgua"
+            android:screenOrientation="portrait"
+            android:label="Apertura y cierre de la válvula del Agua">
+        </activity>
+        <activity
+            android:name=".Calefaccion"
+            android:screenOrientation="portrait"
+            android:label="Programación de la calefacción">
+        </activity>
+        <activity
+            android:name=".ProgramaCale"
+            android:screenOrientation="portrait"
+            android:label="Programar la calefacción">
+        </activity>
+        <activity
+            android:name=".OpenCloseRiego"
+            android:screenOrientation="portrait"
+            android:label="Apertura y cierre sistema riego">
+        </activity>
+        <activity
+            android:name=".OnOffAlarma"
+            android:screenOrientation="portrait"
+            android:label="Encendido y apagado de sistema de alarma">
+        </activity>
+        <activity
+            android:name=".ProgramaAlarma"
+            android:screenOrientation="portrait"
+            android:label="Programar encendido/apagado de alarma">
+        </activity>
+        <activity
+            android:name=".SetPersianas"
+            android:screenOrientation="portrait"
+            android:label="Apertura/cierre de la persiana">
+        </activity>
+        <activity
+            android:name=".ProgramaPersiana"
+            android:screenOrientation="portrait"
+            android:label="Programar apertura/cierre de persianas">
+        </activity>
+        <activity
+            android:name=".SensoresActuales"
+            android:screenOrientation="portrait"
+            android:label="Valores de los sensores de la habitación">
+        </activity>
+        <activity
+            android:name=".HabLuz2"
+            android:screenOrientation="portrait"
+            android:label="Espacios domotizados">
+        </activity>
+        <activity
+            android:name=".ModifyHabitacion"
+            android:screenOrientation="portrait"
+            android:label="Modificar datos de espacio">
+        </activity>
+        <activity
+            android:name=".DeleteHabitacion"
+            android:screenOrientation="portrait"
+            android:label="Eliminar espacio">
+        </activity>
+        <activity
+            android:name=".ModifyDispositivo"
+            android:screenOrientation="portrait"
+            android:label="Dispositivos de la habitación">
+        </activity>
+        <activity
+            android:name=".ModifyDispositivoYes"
+            android:screenOrientation="portrait"
+            android:label="Modificar datos de dispositivo">
+        </activity>
+        <activity
+            android:name=".DeleteDispositivo"
+            android:screenOrientation="portrait"
+            android:label="Eliminar dispositivo">
+        </activity>
+        <activity
+            android:name=".ModifySensor"
+            android:screenOrientation="portrait"
+            android:label="Sensores de la habitación">
+        </activity>
+        <activity
+            android:name=".ModifySensorYes"
+            android:screenOrientation="portrait"
+            android:label="Modificar datos de sensor">
+        </activity>
+        <activity
+            android:name=".DeleteSensor"
+            android:screenOrientation="portrait"
+            android:label="Eliminar sensor">
+        </activity>
+    </application>
+
+    <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>
